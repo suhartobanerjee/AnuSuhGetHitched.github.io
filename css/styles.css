@@ -13,7 +13,7 @@ body {
     font-weight: 600;
     font-style: normal;
     font-optical-sizing: auto;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
@@ -24,7 +24,7 @@ body {
 
 nav {
     grid-area: navbar;
-    margin: 1em;
+    margin: 4vw;
     padding: 3.5vw;
     display: grid;
     justify-self: stretch;
