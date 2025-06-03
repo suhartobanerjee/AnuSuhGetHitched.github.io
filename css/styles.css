@@ -1,5 +1,10 @@
 html {
     scroll-behavior: smooth;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 3.2vw;
 }
 
 * {
@@ -9,11 +14,6 @@ html {
 
 body {
     background-color: #FFE8EF;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-optical-sizing: auto;
-    font-size: 3.2vw;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
@@ -24,12 +24,12 @@ body {
 
 nav {
     grid-area: navbar;
-    margin: 4vw;
+    # margin: 4vw;
     padding: 3.5vw;
     display: grid;
     justify-self: stretch;
     background-color: #CD87DE;
-    border-radius: 20px;
+    # border-radius: 20px;
 }
 
 .nav_list {
@@ -86,7 +86,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1% 0 1% 0;
+    # margin: 1% 0 1% 0;
 }
 
 .center_image .fg {
@@ -138,6 +138,7 @@ footer {
 
 .event_card_info {
     margin: 5%;
+    font-size: 1.3rem;
 }
 
 .rsvp {
@@ -157,4 +158,5 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     margin: 8vw;
+    font-size: 1.5rem;
 }
