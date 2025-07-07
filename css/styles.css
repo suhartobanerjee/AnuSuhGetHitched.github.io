@@ -4,7 +4,29 @@ html {
     font-weight: 450;
     font-style: normal;
     font-optical-sizing: auto;
-    font-size: 3.2vw;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.15rem;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 * {
@@ -82,22 +104,14 @@ footer {
     margin: 3%;
 }
 
-p {
-    font-size: 1.5rem;
-    text-align: justify;
-    text-justify: inter-word;
-}
 
-.whistledown {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+.whistledown_invitation {
     margin: 8vw;
-    font-family: "Italianno";
-    font-weight: 400;
+    font-family: "Tangerine";
+    font-weight: 450;
 }
 
-.whistledown p {
+.whistledown_invitation p {
     margin-bottom: 10;
 }
 
@@ -148,7 +162,11 @@ p {
 
 .event_card_info {
     margin: 5%;
-    font-size: 1.3rem;
+}
+
+.event_card_info p {
+    text-justify: none;
+    text-align: center;
 }
 
 .rsvp {
