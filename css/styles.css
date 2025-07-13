@@ -46,19 +46,17 @@ body {
 
 nav {
     grid-area: navbar;
-    # margin: 4vw;
     padding: 3.5vw;
-    display: grid;
     justify-self: stretch;
     background-color: #CD87DE;
-    # border-radius: 20px;
 }
 
 .nav_list {
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  width: 70vw;
+    grid-area: nav_list;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .nav_link a {
@@ -91,17 +89,23 @@ body > main {
 
 footer {
     grid-area: footer;
-    padding: 1em;
-    text-align: center;
-    font-size: 2.5vw;
+    padding: 0.7em;
     background-color: #CD87DE;
 }
 
+footer p {
+    text-align: center;
+    font-size: 0.85rem;
+}
 
 .announcement {
+    margin-top: 15;
+}
+
+.announcement h2 {
+    font-family: "Tangerine";
+    font-size: 2.25rem;
     text-align: center;
-    justify-self: center;
-    margin: 3%;
 }
 
 
@@ -113,7 +117,8 @@ footer {
     margin-bottom: 10;
     font-family: "Tangerine";
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 .center_image {
@@ -129,8 +134,8 @@ footer {
 }
 
 .section_header {
-    margin: 5%;
     text-align: center;
+    margin: 7%;
 }
 
 .event_cards_container {
@@ -180,6 +185,7 @@ footer {
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
 }
 
 .reco_textbox {
@@ -187,4 +193,47 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     margin: 8vw;
+}
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .nav_list {
+        justify-content: start;
+        font-size: 1.7rem;
+        .nav_link {
+            margin-right: 1.5em;
+        }
+    }
+    
+    .announcement h2 {
+        font-size: 5rem;
+    }
+    
+    .whistledown_invitation {
+        margin-left: 15vw;
+        margin-right: 15vw;
+        p {
+            font-size: 2.25rem;
+        }
+    }
+
+    .event_cards_container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .event_card {
+        width: 25vw;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .reco_textbox {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    
 }
